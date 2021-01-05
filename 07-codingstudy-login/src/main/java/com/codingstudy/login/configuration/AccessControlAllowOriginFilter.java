@@ -2,12 +2,13 @@ package com.codingstudy.login.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
 /**
  * 解决跨域问题
  */
 @Configuration
-public class AccessControlAllowOriginFilter extends WebMvcConfigurerAdapter {
+public class AccessControlAllowOriginFilter implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")

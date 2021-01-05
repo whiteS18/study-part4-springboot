@@ -11,11 +11,16 @@
       <module fileurl="file://$PROJECT_DIR$/05-jpa-test/05-jpa-test.iml" filepath="$PROJECT_DIR$/05-jpa-test/05-jpa-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/07-codingstudy-login/07-codingstudy-login.iml" filepath="$PROJECT_DIR$/07-codingstudy-login/07-codingstudy-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/06-codingstudy-Aop/Aop.iml" filepath="$PROJECT_DIR$/06-codingstudy-Aop/Aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/00-codingstudy-ajax/ajax.iml" filepath="$PROJECT_DIR$/00-codingstudy-ajax/ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/00-01-codingstudy-aop/aop.iml" filepath="$PROJECT_DIR$/00-01-codingstudy-aop/aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-spring-boot-MVC/demo01.iml" filepath="$PROJECT_DIR$/01-spring-boot-MVC/demo01.iml" />
       <module fileurl="file://$PROJECT_DIR$/05-jpa-test/jpatest.iml" filepath="$PROJECT_DIR$/05-jpa-test/jpatest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-codingstudy-login/login.iml" filepath="$PROJECT_DIR$/07-codingstudy-login/login.iml" />
       <module fileurl="file://$PROJECT_DIR$/08-codingstudy-login/login-element-ui.iml" filepath="$PROJECT_DIR$/08-codingstudy-login/login-element-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/03-mybatis-@/mybatis03.iml" filepath="$PROJECT_DIR$/03-mybatis-@/mybatis03.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-mybatis-plus/mybatisplus.iml" filepath="$PROJECT_DIR$/04-mybatis-plus/mybatisplus.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-mybatisxml/mybatisxml.iml" filepath="$PROJECT_DIR$/02-mybatisxml/mybatisxml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-codingstudy-Aop/sop.iml" filepath="$PROJECT_DIR$/06-codingstudy-Aop/sop.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot.iml" filepath="$PROJECT_DIR$/.idea/springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-spring-boot-MVC/springbootMVC.iml" filepath="$PROJECT_DIR$/01-spring-boot-MVC/springbootMVC.iml" />
     </modules>

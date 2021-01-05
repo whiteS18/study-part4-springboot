@@ -6,42 +6,48 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="05-jpa-test" />
-        <module name="mybatisxml" />
-        <module name="00-codingstudy-ajax" />
-        <module name="springbootMVC" />
         <module name="01-spring-boot-MVC" />
-        <module name="mybatisplus" />
-        <module name="jpatest" />
-        <module name="02-mybatisxml" />
-        <module name="07-codingstudy-login" />
         <module name="Aop" />
-        <module name="mybatis03" />
-        <module name="04-mybatis-plus" />
+        <module name="aop" />
+        <module name="demo01" />
+        <module name="05-jpa-test" />
+        <module name="07-codingstudy-login" />
+        <module name="03-mybatis-@" />
         <module name="00-01-codingstudy-aop" />
         <module name="login-element-ui" />
-        <module name="03-mybatis-@" />
+        <module name="login" />
+        <module name="jpatest" />
+        <module name="ajax" />
+        <module name="mybatisplus" />
+        <module name="springbootMVC" />
+        <module name="00-codingstudy-ajax" />
+        <module name="sop" />
+        <module name="mybatis03" />
+        <module name="mybatisxml" />
+        <module name="02-mybatisxml" />
+        <module name="04-mybatis-plus" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="00-01-codingstudy-aop" target="13" />
-      <module name="00-codingstudy-ajax" target="13" />
-      <module name="01-spring-boot-MVC" target="1.8" />
-      <module name="02-demo" target="1.8" />
-      <module name="02-mybatisxml" target="1.8" />
-      <module name="03-demo" target="1.8" />
-      <module name="03-mybatis-@" target="1.8" />
-      <module name="03-mybatis@" target="1.8" />
+    <bytecodeTargetLevel target="11">
+      <module name="00-01-codingstudy-aop" target="11" />
+      <module name="00-codingstudy-ajax" target="11" />
+      <module name="01-spring-boot-MVC" target="11" />
+      <module name="02-mybatisxml" target="11" />
+      <module name="03-mybatis-@" target="11" />
       <module name="04-mybatis-plus" target="1.8" />
       <module name="05-jpa-test" target="1.8" />
-      <module name="06-codingstudy-Aop" target="13" />
       <module name="07-codingstudy-login" target="1.8" />
+      <module name="ajax" target="13" />
       <module name="Aop" target="13" />
+      <module name="aop" target="13" />
+      <module name="demo01" target="1.8" />
       <module name="jpatest" target="1.8" />
+      <module name="login" target="1.8" />
       <module name="login-element-ui" target="1.8" />
       <module name="mybatis03" target="1.8" />
       <module name="mybatisplus" target="1.8" />
       <module name="mybatisxml" target="1.8" />
+      <module name="sop" target="13" />
       <module name="springbootMVC" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -50,21 +56,22 @@
       <module name="00-01-codingstudy-aop" options="-parameters" />
       <module name="00-codingstudy-ajax" options="-parameters" />
       <module name="01-spring-boot-MVC" options="-parameters" />
-      <module name="02-demo" options="-parameters" />
       <module name="02-mybatisxml" options="-parameters" />
-      <module name="03-demo" options="-parameters" />
       <module name="03-mybatis-@" options="-parameters" />
-      <module name="03-mybatis@" options="-parameters" />
       <module name="04-mybatis-plus" options="-parameters" />
       <module name="05-jpa-test" options="-parameters" />
-      <module name="06-codingstudy-Aop" options="-parameters" />
       <module name="07-codingstudy-login" options="-parameters" />
       <module name="Aop" options="-parameters" />
+      <module name="ajax" options="-parameters" />
+      <module name="aop" options="-parameters" />
+      <module name="demo01" options="-parameters" />
       <module name="jpatest" options="-parameters" />
+      <module name="login" options="-parameters" />
       <module name="login-element-ui" options="-parameters" />
       <module name="mybatis03" options="-parameters" />
       <module name="mybatisplus" options="-parameters" />
       <module name="mybatisxml" options="-parameters" />
+      <module name="sop" options="-parameters" />
       <module name="springbootMVC" options="-parameters" />
     </option>
   </component>

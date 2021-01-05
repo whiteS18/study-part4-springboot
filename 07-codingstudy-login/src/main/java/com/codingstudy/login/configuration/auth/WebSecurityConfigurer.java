@@ -10,13 +10,9 @@ import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.util.AntPathMatcher;
 import org.springframework.web.cors.CorsUtils;
 
 /**
@@ -25,34 +21,33 @@ import org.springframework.web.cors.CorsUtils;
 @Configuration
 public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
 
-    @Autowired
-    @Qualifier("authUserDetailsServiceImpl")
-    private UserDetailsService userDetailsService;
-
-    @Autowired
-    private MyOncePerRequestFilter myOncePerRequestFilter;
-    @Autowired
-    private MyAuthenticationEntryPoint myAuthenticationEntryPoint;
-    @Autowired
-    private MyAccessDeniedHandler myAccessDeniedHandler;
-
-    //登录成功处理器
-    @Autowired
-    private MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
-    @Autowired
-    private MyAuthenticationFailureHandler myAuthenticationFailureHandler;
-
-    //退出处理器
-    @Autowired
-    private MyLogoutHandler myLogoutHandler;
-    @Autowired
-    private MyLogoutSuccessHandler myLogoutSuccessHandler;
-
-    @Autowired
+    final
     BCryptPasswordEncoderUtil bCryptPasswordEncoderUtil;
+    final
+    DynamicPermission dynamicPermission;
+    private final UserDetailsService userDetailsService;
+    private final MyOncePerRequestFilter myOncePerRequestFilter;
+    private final MyAuthenticationEntryPoint myAuthenticationEntryPoint;
+    private final MyAccessDeniedHandler myAccessDeniedHandler;
+    //登录成功处理器
+    private final MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
+    private final MyAuthenticationFailureHandler myAuthenticationFailureHandler;
+    //退出处理器
+    private final MyLogoutHandler myLogoutHandler;
+    private final MyLogoutSuccessHandler myLogoutSuccessHandler;
 
-    @Autowired
-    DynamicPermission  dynamicPermission;
+    public WebSecurityConfigurer(@Qualifier("authUserDetailsServiceImpl") UserDetailsService userDetailsService, MyOncePerRequestFilter myOncePerRequestFilter, MyAuthenticationEntryPoint myAuthenticationEntryPoint, MyAccessDeniedHandler myAccessDeniedHandler, MyAuthenticationSuccessHandler myAuthenticationSuccessHandler, MyAuthenticationFailureHandler myAuthenticationFailureHandler, MyLogoutHandler myLogoutHandler, MyLogoutSuccessHandler myLogoutSuccessHandler, BCryptPasswordEncoderUtil bCryptPasswordEncoderUtil, DynamicPermission dynamicPermission) {
+        this.userDetailsService = userDetailsService;
+        this.myOncePerRequestFilter = myOncePerRequestFilter;
+        this.myAuthenticationEntryPoint = myAuthenticationEntryPoint;
+        this.myAccessDeniedHandler = myAccessDeniedHandler;
+        this.myAuthenticationSuccessHandler = myAuthenticationSuccessHandler;
+        this.myAuthenticationFailureHandler = myAuthenticationFailureHandler;
+        this.myLogoutHandler = myLogoutHandler;
+        this.myLogoutSuccessHandler = myLogoutSuccessHandler;
+        this.bCryptPasswordEncoderUtil = bCryptPasswordEncoderUtil;
+        this.dynamicPermission = dynamicPermission;
+    }
 
     /**
      * 从容器中取出 AuthenticationManagerBuilder，执行方法里面的逻辑之后，放回容器

@@ -40,7 +40,6 @@ public class MyUsernamePasswordAuthenticationFilter extends UsernamePasswordAuth
                     //可以验证账号、密码
                     //System.out.println("username = " + username);
                     //System.out.println("password = " + password);
-
                     //检测账号、密码是否存在
                     if (userService.checkLogin(username, password)) {
                         //将账号、密码装入UsernamePasswordAuthenticationToken中
